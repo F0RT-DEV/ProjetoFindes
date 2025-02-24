@@ -7,68 +7,67 @@ body {
     font-family: Arial, sans-serif;
     font-family: "Red Hat Display";
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
   
 .header {
     display: flex;
-    flex-direction: column; /* Muda a direção do flex para coluna em telas menores */
-    margin-left: 20px;
-    margin-right: 20px;
+    margin:8px 70px 0px 10px;
     justify-content: space-between;
     align-items: center;
-   
   }
   
 .profession {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    font-size: 27px;
   }
   
 .square {
-    width: 65px;
-    height: 65px;
+    width: 64px;
+    height: 64px;
     border: 4px solid #FD7B01;
     margin-right: 20px;
-  }
-  
-.header .profession span {
-    font-size: 30px;
 }
+  
 .senai{
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
 }
 .title {
+    font-size: 145px; 
     font-weight: bold;
     line-height:120px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    font-size: 10px;
+    margin-left: 25%;
 }
 
 .line1{
     border: 0;
-    height: 3px;
+    height: 4px;
     background: #FD7B01;
     margin: 20px 0;
-    width: 59%;
+    width: 62%;
     margin-bottom: 30px;
 }
 
 .line2{
     border: 0;
-    height: 3px;
+    height: 4px;
     background: #FD7B01;
     margin: 20px 0;
     width: 36%;
     transform: rotate(90deg); 
     position: absolute; 
     top: calc(65% - 10px); 
-    right: 76%; 
+    right: 76.4%; 
 }
 
 .Tm{
@@ -83,7 +82,7 @@ body {
 
 .descubra {
     margin-top: 20px;
-    margin-left: 440px;
+    margin-left: 400px;
     padding: 10px 20px;
     background-color: #FD7B01; 
     color: white;
@@ -92,14 +91,14 @@ body {
     font-weight: bold;
     font-size: 50px;
     cursor: pointer;
-    width: 39%;
+    width: 40%;
     height: 9%;
 }
-
 a{
     text-decoration: none;
     color: white;
 }
+
 
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -113,7 +112,7 @@ a{
     }
 }
 
-@media (min-width: 901px) {
+/* @media (min-width: 901px) {
     .header {
         flex-direction: row; 
         margin-left: 50px;
@@ -145,7 +144,7 @@ a{
         margin-top: 20px;
         margin-left: 20px;
     }
-}
+} */
 
 
 @media (max-width: 600px) {

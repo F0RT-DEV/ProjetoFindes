@@ -78,7 +78,8 @@ updateOptions();
 // Função para selecionar uma opção
 function selectOption(option) {
     console.log("Opção selecionada: " + option);
-    // Aqui você pode adicionar a lógica de seleção
+    alert("Opção selecionada: "+ option)
+    window.location.href = "Salario.html"; 
 }
 
 // Adiciona eventos aos botões de navegação
