@@ -102,4 +102,32 @@ p span{
     text-decoration: underline;
 }
 
+@media (min-width: 600px) and (max-width: 900px) {
+}
+
+@media (min-width: 901px) {
+    .header {
+        margin-top: 19px;
+        margin-bottom: 33px;
+    }
+
+    h1{
+        font-size: 125px;
+        line-height: 125px;
+    }
+    p{
+        margin-right: 40px;
+    }
+    .buttuns button{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .option{
+        height: 85px;
+    }
+}
+
+
+@media (max-width: 600px) {
+}
 
