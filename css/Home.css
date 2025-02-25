@@ -112,11 +112,14 @@ a{
     }
 }
 
-/* @media (min-width: 901px) {
+ @media (min-width: 901px) {
     .header {
         flex-direction: row; 
         margin-left: 50px;
         margin-right: 70px;
+    }
+    .senai{
+        margin-top: 15px;
     }
 
     .title {
@@ -135,16 +138,16 @@ a{
     }
     .line1{
         width: 62%;
-        margin-right: 10px;
+        margin-top: 40px;
     }
     .line2{
         top: calc(70% - 1px); 
     }
     .profession{
-        margin-top: 20px;
+        margin-top: 15px;
         margin-left: 20px;
     }
-} */
+} 
 
 
 @media (max-width: 600px) {

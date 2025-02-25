@@ -44,7 +44,7 @@ p span{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    margin: 50px 0px 50px 0px;
+    margin: 10px 0px 200px 0px;
 }
 
 
@@ -65,7 +65,7 @@ p span{
 @media (min-width: 600px) and (max-width: 900px) {
 }
 
-/* @media (min-width: 901px) {
+ @media (min-width: 901px) {
     .header {
         margin-top: 19px;
         margin-bottom: 33px;
@@ -78,14 +78,10 @@ p span{
     p{
         margin-right: 40px;
     }
-    .buttuns button{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
     .option{
         height: 85px;
     }
-} */
+} 
 
 
 @media (max-width: 600px) {

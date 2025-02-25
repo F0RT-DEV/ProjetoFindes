@@ -1,5 +1,5 @@
 // Array de opções de profissão por página
-const jobOptions = [
+const cursosOption = [
     [
         "Estagiário/Aprendiz", 
         "Autônomo", 
@@ -30,10 +30,10 @@ let currentPage = 0; // Inicia na primeira página
 
 // Função para atualizar as opções de profissão
 function updateOptions() {
-    const optionsContainer = document.getElementById("job-options");
+    const optionsContainer = document.getElementById("Cursos-options");
     optionsContainer.innerHTML = ''; // Limpa opções atuais
 
-    jobOptions[currentPage].forEach(job => {
+    cursosOption[currentPage].forEach(job => {
         const button = document.createElement('button');
         button.className = 'option';
         button.textContent = job;
@@ -43,7 +43,7 @@ function updateOptions() {
 }
 
 function changePage(page) {
-    if (page < 0 || page >= jobOptions.length) return; // Verifica limites
+    if (page < 0 || page >= cursosOption.length) return; // Verifica limites
 
     currentPage = page; // Atualiza a página atual
 
@@ -57,7 +57,7 @@ function changePage(page) {
     document.getElementById('backButton').style.display = currentPage > 0 ? 'inline' : 'none'; // mostrar ou esconder
 
     // Exibir/ocultar o botão de avançar
-    document.getElementById('nextButton').style.display = currentPage < jobOptions.length - 1 ? 'inline' : 'none'; // mostrar ou esconder
+    document.getElementById('nextButton').style.display = currentPage < cursosOption.length - 1 ? 'inline' : 'none'; // mostrar ou esconder
 
     updateOptions(); // Atualiza as opções
 }
@@ -77,11 +77,6 @@ updateOptions();
 
 // Função para selecionar uma opção
 function selectOption(option) {
-    console.log("Opção selecionada: " + option);
-    alert("Opção selecionada: "+ option)
-    window.location.href = "Salario.html"; 
-}
-function selectCursoOption(option) {
     console.log("Opção selecionada: " + option);
     alert("Opção selecionada: "+ option)
     // window.location.href = "Salario.html"; 
