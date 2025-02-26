@@ -6,6 +6,7 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .header {
@@ -39,6 +40,8 @@ p {
         align-items: center;
         margin: 0px 10px 0px 10px;
         font-size: 30px;
+        color: #003c64;
+        font-weight: bold;
     }
     button{
         display: flex;
